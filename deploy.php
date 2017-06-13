@@ -4,23 +4,23 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Configuration
-
-set('repository', 'git@domain.com:username/repository.git');
+set('mtusitelaravel', 'git@github.com:lynnphayu/mtusitelaravel.git');
 set('git_tty', true); // [Optional] Allocate tty for git on first deployment
 add('shared_files', []);
 add('shared_dirs', []);
 add('writable_dirs', []);
-
-
+set('default_stage', 'staging');
+set('ssh_type', 'native');
+set('ssh_multiplexing', true);
 // Hosts
 
-host('project.com')
-    ->stage('production')
-    ->set('deploy_path', '/var/www/project.com');
+host('sentimentalrat.com')
+    ->stage('staging')
+    ->set('deploy_path', '/var/www/sentimentalrat.com/html');
     
-host('beta.project.com')
-    ->stage('beta')
-    ->set('deploy_path', '/var/www/project.com');  
+// host('beta.project.com')
+//     ->stage('beta')
+//     ->set('deploy_path', '/var/www/project.com');  
 
 
 // Tasks
