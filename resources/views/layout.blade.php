@@ -8,27 +8,27 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-       <!--  <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> -->
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/bulma.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/blueberry.css')}}">
-
+    <link rel="stylesheet" type="text/css" href="{{asset('css/font.css')}}">
+    <style>
+    </style>
+    @yield('style')
     </head>
     <body>
     <nav class="nav has-shadow">
         <div class="container">
             <div class="nav-left">
                 <a class="nav-item is-mobile is-hidden-desktop">
-                    <img src="./img/MTU.png">
+                    <img src="{{asset('/img/MTU.png')}}">
                 </a>
                 <p class="nav-item is-hidden-mobile">
                     Mandalay Technological University
                 </p>
-                <p class="nav-item is-hidden-desktop">
-                    MTU
+                <p class="nav-item is-hidden-desktop" style="font-size: 13px; padding-left: 0!important;padding-right: 0!important;">
+                    Mandalay Technological University
                 </p>
             </div>
             <span class="nav-toggle">
@@ -40,19 +40,31 @@
                 <a href="/" class="nav-item is-tab is-hidden-tablet
                 {{ Request::path() ==  '/' ? 'is-active' : ''  }}">Home</a>
                 <a href="/depertments" class="nav-item is-tab is-hidden-tablet
-                {{ Request::path() ==  'depertments' ? 'is-active' : ''  }}">Depertments</a>
+                {{ strstr(Request::path(),'depertments') ? 'is-active' : ''  }}">Depertments</a>
+                <a href="/depertments" class="nav-item is-tab is-hidden-tablet
+                {{ strstr(Request::path(),'academic') ? 'is-active' : ''  }}">Academic Plan</a>
+                <a href="/depertments" class="nav-item is-tab is-hidden-tablet
+                {{ strstr(Request::path(),'activities') ? 'is-active' : ''  }}">Activities</a>
                 <a href="/research" class="nav-item is-tab is-hidden-tablet
-                {{ Request::path() ==  'research' ? 'is-active' : ''  }}">Research</a>
+                {{ strstr(Request::path(),'Research') ? 'is-active' : ''  }}">Research</a>
+                <a href="/research" class="nav-item is-tab is-hidden-tablet
+                {{ strstr(Request::path(),'alumni') ? 'is-active' : ''  }}">Alumni</a>
                 <a href="/about" class="nav-item is-tab is-hidden-tablet
-                {{ Request::path() ==  'about' ? 'is-active' : ''  }}">About</a>
+                {{ strstr(Request::path(),'about') ? 'is-active' : ''  }}">About</a>
                 <a href="/" class="nav-item is-tab is-hidden-mobile 
-                {{ Request::path() ==  '/' ? 'is-active' : ''  }}">Home</a>
+                {{ Request::path() == '/' ? 'is-active' : ''  }}">Home</a>
                 <a href="/depertments" class="nav-item is-tab is-hidden-mobile
-                {{ Request::path() ==  'depertments' ? 'is-active' : ''  }}">Depertments</a>
+                {{ strstr(Request::path(),'depertments') ? 'is-active' : ''  }}">Depertments</a>
+                <a href="/academic" class="nav-item is-tab is-hidden-mobile
+                {{ strstr(Request::path(),'academic') ? 'is-active' : ''  }}">Academic Plan</a>
+                <a href="/activities" class="nav-item is-tab is-hidden-mobile
+                {{ strstr(Request::path(),'activities') ? 'is-active' : ''  }}">Activities</a>
                 <a href="/research" class="nav-item is-tab is-hidden-mobile
-                {{ Request::path() ==  'research' ? 'is-active' : ''  }}">Research</a>
+                {{ strstr(Request::path(),'research') ? 'is-active' : ''  }}">Research</a>
+                <a href="/research" class="nav-item is-tab is-hidden-mobile
+                {{ strstr(Request::path(),'alumni') ? 'is-active' : ''  }}">Alumni</a>
                 <a href="/about" class="nav-item is-tab is-hidden-mobile
-                {{ Request::path() ==  'about' ? 'is-active' : ''  }}">About</a>
+                {{ strstr(Request::path(),'about') ? 'is-active' : ''  }}">About</a>
             </div>
         </div>
     </nav>
