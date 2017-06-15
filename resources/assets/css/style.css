@@ -1,0 +1,78 @@
+body{
+	/*background-image: url(./bg.jpg);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#logo-column{
+	padding: 0 !important;
+}
+#logo{
+	position: relative;
+	right: -80px;
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #ededed;
+	text-align: center;
+	float: right;
+	width: 150px;
+}
+.is-8{
+	background-color: #ededed;
+}
+nav{
+	border: 1px solid #dddddd;
+}
+.blueberry{
+	padding-top: 20px !important;
+	padding: 0;
+}
+.slides>li>p{
+	bottom: 0px;
+	max-width: 100%;
+	font-size: 0.8rem;
+	height: 50px;
+	padding: 1em;
+	position: absolute;
+	color: #dedede;
+	background-color: #888888;
+	background: rgba(0,0,0,.5);
+}
+.card{
+	margin: 10px !important;
+}
+.card>p{
+	background-color: #343434;
+	width: 100%;
+	padding: 5px;
+	color: #ededed;
+}
+.card-content{
+	padding: 1em !important;
+	font-size: 0.8rem;
+}
+.content>p{
+	font-size: 0.8rem;
+}
+.media{
+	padding: 20px !important;
+	margin: 10px !important;
+	background-color: white;
+}
+.remark>p{
+	display: inline-block;
+	background-color: #3273dc;
+	color: #ededed;
+	margin-bottom: 10px;
+	padding: 0 30px 5px 30px;
+}
+.remark{
+	width: 95%;
+	margin: 0 auto;
+	border-top: 8px solid #3273dc;
+}
+footer{
+	background-color: white !important;
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+}
