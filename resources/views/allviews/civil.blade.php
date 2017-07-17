@@ -1,9 +1,9 @@
-@extends('allviews.depertments')
+@extends('allviews.departments')
 
 @section('info')
 	<div class="column content" style="padding-left: 15px;">
 		<h3 class="title is-3">Departments of Civil Engieering</h3>
-		<h2 class="title is-4">Previous Researches</h2>
+		<h4 class="title is-4">Previous Researches</h4>
 		<ol>
 			<li>
 				Proposed Advisory Stillwater Depth in Ayeyarwady Coastal Region and Sensitivity of Flood Load Effect on Reinforced Concrete Buildings
@@ -35,10 +35,20 @@
 				Analysis of the Performance of the Various Calculation Methods for Evapotranspiration(Et<sub>0</sub> )
 			</li>
 			<li>
-				<p style="font-family:Yunghkio;">
+				<p style="font-family:Yunghkio,Myanmar3;">
 				မန္တလေးနည်းပညာတက္ကသိုလ်၏ ဖွဲ့စည်းဖြစ်ပေါ်လာပုံ နောက်ခံသမိုင်းကြောင်းများ၊ ဖွင့်လှစ်ခဲ့သော တည်နေရာ
 				</p>
 			</li>
 		</ol>
 	</div>
+	<style type="text/css">
+		ol{
+			margin-left: 1.5em !important;
+			margin-right: 0 !important;
+		}
+		ol>li{
+			font-size: 0.95rem !important;
+			text-align: justify !important;
+		}
+	</style>
 @endsection

@@ -1,9 +1,18 @@
-@import url('http://mywebfont.appspot.com/css?font=yunghkio');
+@font-face {
+	font-family:'Yunghkio';
+	src:local('Yunghkio'), 
+	url('../fonts/yunghkio.ttf');
+}
+
 body{
 	/*background-image: url(./bg.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+}
+nav{
+	height: auto !important;
+	text-align: left !important;
 }
 
 #logo-column{
@@ -18,9 +27,7 @@ body{
 	float: right;
 	width: 150px;
 }
-.is-8{
-	background-color: #ededed;
-}
+
 nav{
 	border: 1px solid #dddddd;
 }
@@ -52,7 +59,7 @@ nav{
 	padding: 1em !important;
 	font-size: 0.8rem;
 }
-.content>p{
+.welcome-events-p{
 	font-size: 0.8rem;
 }
 .media{

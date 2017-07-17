@@ -9,7 +9,8 @@
                     <br> University</p>
             </div>
         </div>
-        <div class="column is-8">
+        <div class="column is-8" style="background-color: #ededed;
+">
             <div class="blueberry column is-10">
                 <ul class="slides">
                     <li>
@@ -123,7 +124,7 @@
                                 </figure>
                                 <div class="media-content">
                                     <div class="content">
-                                        <p>
+                                        <p class="welcome-events-p">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut.
                                         </p>
                                     </div>
@@ -137,7 +138,7 @@
                                 </figure>
                                 <div class="media-content">
                                     <div class="content">
-                                        <p>
+                                        <p class="welcome-events-p">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                                         </p>
                                     </div>
@@ -151,7 +152,7 @@
                                 </figure>
                                 <div class="media-content">
                                     <div class="content">
-                                        <p>
+                                        <p class="welcome-events-p">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                                         </p>
                                     </div>
@@ -165,7 +166,7 @@
                                 </figure>
                                 <div class="media-content">
                                     <div class="content">
-                                        <p>
+                                        <p class="welcome-events-p">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                                         </p>
                                     </div>
@@ -179,7 +180,7 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="content">
-                                        <p>
+                                        <p class="welcome-events-p">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                                         </p>
                                     </div>
