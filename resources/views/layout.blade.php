@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Mandalay Technological University</title>
 
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/bulma.css')}}">
@@ -73,6 +73,7 @@
         </div>
     </nav>
     @yield('content')
+    @include('allviews.footer')
     <!-- <script type="text/javascript" src="./bootstrap.min.js"></script> -->
     <script type="text/javascript" src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/jquery.blueberry.js')}}"></script>

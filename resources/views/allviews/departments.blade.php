@@ -1,10 +1,10 @@
 @extends('layout')
 
 @section('content')
-	<div class="column is-8 container" style="background-color: white !important; padding-top: 0 !important">
-		<div class="tile is-ancestor is-parent">
-		<div class="tile is-3" style="padding: 7px; padding-right: 0; background-color: white; 
-		border: 1px solid #dddddd; margin-top: 10px;">
+	<div class="column is-12" style="background-color: white !important; padding: 0 !important">
+		<div class="tile is-ancestor is-parent" style="margin: 0 auto;">
+		<div class="tile is-2" style="padding: 7px; padding-right: 0; background-color: white; 
+		border: 1px solid #dddddd; margin-top: 10px; max-height: 700px;">
 		<div class="departments-toggle is-hidden-desktop
 		{{ Request::path() ==  'departments' ? 'hide' : ''  }}">
             	Departments
@@ -50,13 +50,19 @@
 		</aside>
 		</div>
 		@yield('info')
+		<div class="tile is-3" style="padding: 7px; padding-right: 0; background-color: white; margin-top: 10px; max-height: 150px; border: 1px solid grey;">
+		@yield('contact')
+		</div>
 	</div>
 	<style type="text/css">
+		.menu-list a{
+			padding: 0.5em 0.5em !important;
+		}
 		.menu-list>li:hover{
-			border-right: 4px solid #3273dc;
+			border-right: 3px solid #3273dc;
 		}
 		.menu-list>li:hover a{
-			color: #3273dc !important;
+			color: #3273dc;
 		}
 		.active{
 			color: white !important;
